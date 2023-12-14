@@ -1,0 +1,14 @@
+body{
+    background-color: #005F49;
+}
+
+h1{
+    background-color: yellowgreen;
+    border-radius: 15px;
+}
+
+p{
+    text-align: center;
+    background-color: honeydew;
+    border-radius: 10px;
+}
