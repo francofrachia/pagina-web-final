@@ -1,14 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: black;
+    background-color: #FFE700;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: #005F49;
+}
+
+header{
     background-color: #005F49;
 }
 
-h1{
-    background-color: yellowgreen;
-    border-radius: 15px;
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #FFE700;
+    font-size: 1.6em;
 }
 
-p{
+header .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    background-color: honeydew;
-    border-radius: 10px;
+    padding-bottom: 25px;
+}
+
+header a{
+    background-color: #024b3a;
+    border-radius: 30px;
+    margin-left: 10px;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.2s;
+}
+
+header a:hover{
+    color: #FFE700;
+    transform: scale(1.2);
+}
+
+
+#somos-rey .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#proba{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#proba h2{
+    font-size: 9vw;
+}
+
+#proba button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100,100,100);
+    padding: 12px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){       
+        header{
+            position: fixed;
+            width: 100%;
+        }
+
+        header .container{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header nav{
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+
+    #somos-rey .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-rey .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #somos-rey h2{
+        margin-top: 100px;
+    }
+
+    #somos-rey .img-container{
+        background-image: url(https://circuitoproductivo.com/wp-content/uploads/2018/12/Proceso-de-elaboracion-de-la-yerba-mate.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        border-radius: 10px;
+        margin-top: 125px;
+    }
+
+    #proba h2{
+        font-size: 5em;
+    }
+
+    #proba button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        background-image: url(https://www.impulsonegocios.com/wp-content/uploads/2020/07/ruta-yerba-mate-DEF.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        justify-content: space-between;
+    }
+
+    footer p{
+        color: black;
+    }
+
+    footer div ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    footer div ul li a:hover{
+        color: white;
+    }
+
 }

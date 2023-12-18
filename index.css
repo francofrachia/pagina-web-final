@@ -69,14 +69,19 @@ header nav{
 }
 
 header a{
-    padding: 5px 12px;
+    background-color: #024b3a;
+    border-radius: 30px;
+    margin-left: 10px;
+    padding: 10px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
+    transition: 0.2s;
 }
 
 header a:hover{
     color: #FFE700;
+    transform: scale(1.2);
 }
 
 #hero{
@@ -135,6 +140,7 @@ header a:hover{
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
+    box-shadow: 2px 2px 10px black;
 }
 
 .carta:first-child{
@@ -208,4 +214,127 @@ footer .container{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+@media (min-width: 720px){       
+        header{
+            position: fixed;
+            width: 100%;
+        }
+
+        header .container{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header nav{
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-rey .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-rey .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #somos-rey h2{
+        margin-top: 125px;
+    }
+
+    #somos-rey .img-container{
+        background-image: url(https://www.infocampo.com.ar/wp-content/uploads/2019/05/mate_01.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    #nuestros-productos .productos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-productos h2{
+        font-size: 4em;
+    }
+
+    #nuestros-productos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-productos .carta{
+        padding: 50px;
+    }
+
+    #caracteristicas{
+        background-image: url(https://acdn.mitiendanube.com/stores/001/441/504/products/111-747a73f2488da58ed216672579437629-1024-1024.jpg);
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 100px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #proba h2{
+        font-size: 5em;
+    }
+
+    #proba button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        background-image: url(https://www.impulsonegocios.com/wp-content/uploads/2020/07/ruta-yerba-mate-DEF.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        justify-content: space-between;
+    }
+
+    footer p{
+        color: black;
+    }
+
+    footer div ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    footer div ul li a:hover{
+        color: white;
+    }
+
+}
+
+@media (min-width: 1200px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
 }
